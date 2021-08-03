@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary color */
+  --p-softred: rgb(254, 120, 103);
+  --p-yellow: rgb(250, 212, 0);
+  --p-graphic-design-text: hsl(167, 40%, 24%);
+  --p-photography-text: hsl(198, 62%, 26%);
+  --p-footer: hsl(168, 34%, 41%);
+
+  /* Neutral color */
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* regular tag styles */
+a {
+  text-decoration: none;
+}
+.btn {
+  background-color: var(--White);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 29px;
+  font-size: 0.9rem;
+  font-family: "barlow";
+}
+li {
+  list-style: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* navbar Style Begin */
+
+.nav-bar {
+  font-family: "barlow";
+  justify-content: space-between;
+  margin: 10px 50px;
+}
+
+.nav-right li {
+  padding: 0px 2rem;
+}
+.btn-contacts a {
+  color: black;
+}
+.nav-ul li a {
+  font-weight: 400;
+  color: var(--White);
+  font-size: 15px;
+}
+
+/* navbar-completed */
+
+/* hero-section */
+.hero-section {
+  background: url(/desktop/image-header.jpg);
+  height: 100vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--White);
+}
+
+.hero-text {
+  font-family: "Fraunces";
+  font-size: 40px;
+  letter-spacing: 7px;
+  font-weight: 900;
+  flex-direction: column;
+  gap: 3rem;
+  height: 350px;
+}
+
+/* hero-section--ended */
+
+/* marketing-section */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img-cont {
+  width: 100%;
+}
+
+.text-area-sec {
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin: 0px 120px; */
+  padding: 0px 121px;
+  gap: 2rem;
+}
+
+.container .text-area-sec h2 {
+  font-family: "Fraunces";
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+.container .text-area-sec p {
+  font-family: "Barlow";
+  color: var(--Dark-grayish-blue);
+}
+
+.container div a {
+  color: var(--Very-dark-desaturated-blue);
+  font-family: "Fraunces";
+}
+.yellow {
+  border-bottom: 7px solid rgb(252 233 127);
+  border-radius: 5px;
+}
+
+.red {
+  border-bottom: 7px solid rgb(248, 148, 134);
+  border-radius: 5px;
+}
+
+/* markerting-section end here */
+
+/* graphic and photography section begin */
+
+.graphic {
+  background: url(/desktop/image-graphic-design.jpg);
+}
+
+.Photography {
+  background: url(/desktop/image-photography.jpg);
+}
+.imgs {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.gap {
+  height: 90vh;
+}
+.text-content {
+  flex-direction: column;
+  width: 375px;
+  text-align: center;
+  justify-content: space-around;
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+
+.text-content h1,
+p {
+  font-family: "Fraunces";
+}
+.text-content p {
+  font-family: "barlow";
+}
+
+.graphic .text-content h1,
+p {
+  color: var(--p-graphic-design-text);
+}
+
+.Photography .text-content h1,
+p {
+  color: var(--p-photography-text);
+}
+/* graphic and photography section Ended */
+
+/* testimonial section */
+
+.testimonial {
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.testimonial-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0px 30px;
+}
+
+.testimonial-flex {
+  flex-direction: column;
+  height: 65vh;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+  text-align: center;
+  width: 300px;
+}
+.t-img {
+  width: 130px;
+  border-radius: 65px;
+}
+
+.ct {
+  font-family: "Fraunces";
+  font-weight: 900;
+  letter-spacing: 8px;
+  color: var(--Grayish-blue);
+}
+
+.testimonial-flex p {
+  font-family: "barlow";
+  font-size: 15px;
+  color: var(--Very-dark-grayish-blue);
+}
+
+.t-name h3 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  color: var(--Very-dark-desaturated-blue);
+}
+.t-name p {
+  color: var(--Grayish-blue);
+}
+
+/* TESTIMONIAL SECTION END HERE */
+
+/* img-sec */
+
+.img-p {
+  width: 85%;
+  height: 55vh;
+  margin-top: 5rem;
+}
+/* Footer section */
+
+.footer {
+  height: 40vh;
+  /* background-color: var(--p-footer); */
+  background-color: rgb(118 202 186);
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.footer-sec {
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.l-footer {
+  font-family: "Barlow";
+  color: var(--p-graphic-design-text);
+  font-weight: bolder;
+}
+
+.ul-footer li {
+  padding: 1rem;
+  color: var(--Very-dark-grayish-blue);
+  font-family: "Barlow";
+}
+
+.icons img {
+  padding: 1rem;
+  color: var(--p-graphic-design-text);
+  margin-bottom: 1rem;
+}
